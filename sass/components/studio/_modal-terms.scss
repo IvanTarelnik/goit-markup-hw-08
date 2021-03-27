@@ -1,0 +1,51 @@
+.terms-container {
+  display: flex;
+  align-items: center;
+  min-height: 24px;
+  margin-bottom: 30px;
+}
+
+.terms-container__label {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+.terms-container__input {
+  appearance: none;
+
+  &:checked + .terms-container__checkbox {
+    background-image: url(../images/checkbox.svg);
+    background-size: contain;
+    background-position: center;
+    background-origin: border-box;
+  }
+}
+
+.terms-container__checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--black-text);
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.terms-container__span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+.terms-container__link {
+  text-decoration: underline;
+}

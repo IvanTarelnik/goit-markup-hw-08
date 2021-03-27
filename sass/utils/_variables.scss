@@ -1,0 +1,245 @@
+:root {
+  --white-text: rgb(255, 255, 255);
+  --blue-text: rgb(33, 150, 243);
+  --blue-transparent: rgba(33, 150, 243, 0.9);
+  --black-text: rgb(0, 0, 0);
+  --black-transparent: rgba(0, 0, 0, 0.3);
+  --black-transparent-second: rgba(0, 0, 0, 0.4);
+  --background-color: rgb(47, 48, 58);
+  --background-transparent: rgba(47, 48, 58, 0.8);
+  --heading-color: rgb(33, 33, 33);
+  --content-color: rgb(117, 117, 117);
+  --content-transparent: rgba(117, 117, 117, 0.5);
+  --section-color: rgb(245, 244, 250);
+  --mailtel-color: rgba(255, 255, 255, 0.6);
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --mobile: 480px;
+  --tablet: 768px;
+  --desktop: 1200px;
+}
+
+.site-header {
+  background-color: var(--white-text);
+}
+
+.logo {
+  color: var(--blue-text);
+}
+
+.logo-studio {
+  color: var(--black-text);
+}
+
+.header-links {
+  color: var(--heading-color);
+
+  &::after {
+    background-color: var(--blue-text);
+  }
+
+  &:hover {
+    color: var(--blue-text);
+  }
+
+  &:focus {
+    color: var(--blue-text);
+  }
+}
+
+.header-links--current {
+  color: var(--blue-text);
+}
+
+.header-links.header-links--current::after {
+  background-color: var(--blue-text);
+}
+
+.site-contacts__link {
+  color: var(--content-color);
+
+  &:hover,
+  &:focus {
+    color: var(--blue-text);
+    fill: var(--blue-text);
+  }
+}
+
+.title-section {
+  background-color: var(--background-color);
+}
+
+.title-section__heading {
+  color: var(--white-text);
+}
+
+.title-section__button {
+  color: var(--white-text);
+  background-color: var(--blue-text);
+}
+
+.main-section {
+  background-color: var(--white-text);
+}
+
+.main-container {
+  background-color: var(--section-color);
+}
+
+.info-section {
+  background-color: var(--white-text);
+}
+
+.info-container {
+  background-color: var(--background-transparent);
+}
+
+.info-container__text {
+  color: var(--white-text);
+}
+
+.command-section {
+  background-color: var(--section-color);
+}
+
+.command-card {
+  background-color: var(--white-text);
+}
+
+.command-card__link:hover,
+.command-card__link:focus {
+  fill: var(--white-text);
+  background-color: var(--blue-text);
+}
+
+.clients-section__link:hover,
+.clients-section__link:focus {
+  fill: var(--blue-text);
+}
+
+.footer-container {
+  background-color: var(--background-color);
+}
+
+.address-footer__logo {
+  color: var(--blue-text);
+}
+
+.address-footer__studio {
+  color: var(--white-text);
+}
+
+.address-footer__text {
+  color: var(--white-text);
+}
+
+.address-footer__mailtel {
+  color: var(--mailtel-color);
+}
+
+.networks-footer__join {
+  color: var(--white-text);
+}
+
+.networks-footer__link {
+  fill: var(--white-text);
+
+  &:hover,
+  &:focus {
+    background-color: var(--blue-text);
+  }
+}
+
+.subscribe-footer__join {
+  color: var(--white-text);
+}
+
+.subscribe-footer__input {
+  color: var(--white-text);
+  background-color: var(--background-color);
+}
+
+.subscribe-footer__button {
+  color: var(--white-text);
+  background-color: var(--blue-text);
+}
+
+.portfolio-buttons__btn {
+  color: var(--heading-color);
+
+  &:hover,
+  &:focus {
+    color: var(--white-text);
+    background-color: var(--blue-text);
+  }
+}
+
+.overlay {
+  background-color: var(--blue-transparent);
+}
+
+.overlay__content {
+  color: var(--white-text);
+}
+
+.card-content {
+  background-color: var(--white-text);
+}
+
+.card-content__heading {
+  color: var(--heading-color);
+}
+
+.card-content__text {
+  color: var(--content-color);
+}
+
+.modal {
+  background-color: var(--white-text);
+}
+
+.modal__button {
+  background-color: var(--white-text);
+
+  &:hover,
+  &:focus {
+    fill: var(--blue-text);
+  }
+}
+
+.modal__heading {
+  color: var(--heading-color);
+}
+
+.backdrop {
+  background-color: var(--black-transparent-second);
+}
+
+.form-container:focus-within {
+  fill: var(--blue-text);
+}
+
+.form-container__label {
+  color: var(--content-color);
+}
+
+.form-area::placeholder {
+  color: var(--content-transparent);
+}
+
+.send-container__button {
+  color: var(--white-text);
+  background-color: var(--blue-text);
+}
+
+.terms-container__label {
+  color: var(--content-color);
+}
+
+.terms-container__input:checked + .terms-container__input {
+  border-color: var(--blue-text);
+  background-color: var(--blue-text);
+}
+
+.terms-container__link {
+  color: var(--blue-text);
+}

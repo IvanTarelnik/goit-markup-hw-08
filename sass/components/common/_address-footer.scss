@@ -1,0 +1,47 @@
+.address-footer__logo {
+  display: inline-block;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: 1px solid var(--blue-text);
+  }
+}
+
+.address-footer__menu {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.address-footer__item:not(:last-child) {
+  padding-bottom: 9px;
+}
+
+.address-footer__text {
+  display: inline-block;
+  margin-right: 70px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.address-footer__mailtel {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}

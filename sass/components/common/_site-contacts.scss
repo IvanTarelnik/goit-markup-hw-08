@@ -1,0 +1,34 @@
+.site-contacts {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.site-contacts__link {
+  display: flex;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    transition: color 250ms var(--timing-function);
+  }
+
+  &:focus {
+    outline: 1px solid var(--blue-text);
+  }
+}
+
+.site-contacts__item + .site-contacts__item {
+  margin-left: 50px;
+}
+
+.site-contacts__svg {
+  margin-right: 10px;
+}

@@ -1,0 +1,41 @@
+.networks-footer {
+  display: inline-block;
+  max-width: 206px;
+}
+
+.networks-footer__join {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.networks-footer__menu {
+  display: flex;
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+.networks-footer__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.networks-footer__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: rgb(70, 70, 70);
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    transition: background-color 250ms var(--timing-function);
+  }
+}
