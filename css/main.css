@@ -741,13 +741,14 @@ textarea {
 }
 
 .title-section {
-  height: 600px;
+  max-height: 400px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding: 200px 0;
   background-size: auto 100%;
   background-position: center;
+  background-repeat: no-repeat;
   display: block;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/title-mobile.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/title-mobile.jpg);
@@ -762,6 +763,7 @@ textarea {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .title-section {
+    max-height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/title-tablet.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/title-tablet.jpg);
   }
@@ -776,6 +778,7 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .title-section {
+    max-height: 600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/title-desktop.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/title-desktop.jpg);
   }

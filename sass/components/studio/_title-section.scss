@@ -1,5 +1,5 @@
 .title-section {
-  height: 600px;
+  max-height: 400px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -27,6 +27,7 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-height: 400px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -47,6 +48,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    max-height: 600px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
