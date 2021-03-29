@@ -1,3 +1,12 @@
+.address-footer {
+  @media (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+}
+
 .address-footer__logo {
   display: inline-block;
   font-family: Raleway, sans-serif;
@@ -8,6 +17,11 @@
   letter-spacing: 0.03em;
   margin-bottom: 20px;
   text-decoration: none;
+
+  @media (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.166;
+  }
 
   &:hover {
     text-decoration: underline;
@@ -24,18 +38,29 @@
   padding: 0;
 }
 
+.address-footer__item {
+  @media (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .address-footer__item:not(:last-child) {
   padding-bottom: 9px;
 }
 
 .address-footer__text {
   display: inline-block;
-  margin-right: 70px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+
+  @media (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .address-footer__mailtel {

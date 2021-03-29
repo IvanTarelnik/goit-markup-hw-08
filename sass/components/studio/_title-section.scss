@@ -1,17 +1,69 @@
 .title-section {
-  display: flex;
-  max-width: 1600px;
   height: 600px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding: 200px 0;
+  background-size: auto 100%;
+  background-position: center;
+  display: block;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/image-title.jpg);
+    url(../images/title-mobile.jpg);
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/title-mobile@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/title-tablet.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/title-tablet@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/title-desktop.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/title-desktop@2x.jpg);
+    }
+  }
 }
 
 .title-section__heading {
@@ -22,6 +74,11 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 26px;
+    line-height: 1.615;
+  }
 }
 
 .title-section__button {

@@ -111,20 +111,11 @@
             >Web<span class="logo-studio">Studio</span>
           </a>
           <button
-            type="button"
             class="menu-toggle js-open-menu"
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
-            <svg
-              width="40"
-              height="40"
-              aria-label="Переключатель мобильного меню"
-            >
-              <use
-                class="icon-cross"
-                href="./images/icons.svg#button-close"
-              ></use>
+            <svg width="40" height="40" aria-label="Открытие мобильного меню">
               <use
                 class="icon-menu"
                 href="./images/icons.svg#icon-burger-menu"
@@ -246,19 +237,31 @@
           <h2 class="info-section__heading">Чем мы занимаемся</h2>
           <ul class="info-section__menu">
             <li class="info-section__item">
-              <img src="./images/box-1.png" alt="image_1" />
+              <img
+                srcset="./images/box-1.jpg 1x, ./images/box-1@2x.jpg 2x"
+                src="./images/box-1.jpg"
+                alt="image_1"
+              />
               <div class="info-container">
                 <span class="info-container__text">Десктопные приложения</span>
               </div>
             </li>
             <li class="info-section__item">
-              <img class="image-one" src="./images/box-2.png" alt="image_2" />
+              <img
+                srcset="./images/box-2.jpg 1x, ./images/box-2@2x.jpg 2x"
+                src="./images/box-2.jpg"
+                alt="image_2"
+              />
               <div class="info-container">
                 <span class="info-container__text">Мобильные приложения</span>
               </div>
             </li>
             <li class="info-section__item">
-              <img src="./images/box-3.png" alt="image_3" />
+              <img
+                srcset="./images/box-3.jpg 1x, ./images/box-3@2x.jpg 2x"
+                src="./images/box-3.jpg"
+                alt="image_3"
+              />
               <div class="info-container">
                 <span class="info-container__text">Дизайнерские решения</span>
               </div>
@@ -275,12 +278,14 @@
           <ul class="command-section__menu">
             <li class="command-section__item">
               <article class="command-card">
-                <img
-                  src="./images/img-1.jpg"
-                  alt="image_4"
-                  width="270"
-                  height="260"
-                />
+                <div class="command-card_thumb">
+                  <img
+                    class="command-card_image"
+                    srcset="./images/img-1.jpg 1x, ./images/img-1@2x.jpg 2x"
+                    src="./images/img-1.jpg"
+                    alt="image_4"
+                  />
+                </div>
                 <h3 class="command-card__heading">Игорь Демьяненко</h3>
                 <p class="command-card__text">Product Designer</p>
                 <ul class="command-card__menu">
@@ -317,12 +322,14 @@
             </li>
             <li class="command-section__item">
               <article class="command-card">
-                <img
-                  src="./images/img-2.jpg"
-                  alt="image_5"
-                  width="270"
-                  height="260"
-                />
+                <div class="command-card_image">
+                  <img
+                    class="command-card_thumb"
+                    srcset="./images/img-2.jpg 1x, ./images/img-2@2x.jpg 2x"
+                    src="./images/img-2.jpg"
+                    alt="image_5"
+                  />
+                </div>
                 <h3 class="command-card__heading">Ольга Репина</h3>
                 <p class="command-card__text">Developer</p>
                 <ul class="command-card__menu">
@@ -359,12 +366,14 @@
             </li>
             <li class="command-section__item">
               <article class="command-card">
-                <img
-                  src="./images/img-3.jpg"
-                  alt="image_6"
-                  width="270"
-                  height="260"
-                />
+                <div class="command-card_thumb">
+                  <img
+                    class="command-card_image"
+                    srcset="./images/img-3.jpg 1x, ./images/img-3@2x.jpg 2x"
+                    src="./images/img-3.jpg"
+                    alt="image_6"
+                  />
+                </div>
                 <h3 class="command-card__heading">Николай Тарасов</h3>
                 <p class="command-card__text">Marketing</p>
                 <ul class="command-card__menu">
@@ -401,12 +410,14 @@
             </li>
             <li class="command-section__item">
               <article class="command-card">
-                <img
-                  src="./images/img-4.jpg"
-                  alt="image_7"
-                  width="270"
-                  height="260"
-                />
+                <div class="command-card_thumb">
+                  <img
+                    class="command-card_image"
+                    srcset="./images/img-4.jpg 1x, ./images/img-4@2x.jpg 2x"
+                    src="./images/img-4.jpg"
+                    alt="image_7"
+                  />
+                </div>
                 <h3 class="command-card__heading">Михаил Ермаков</h3>
                 <p class="command-card__text">UI Designer</p>
                 <ul class="command-card__menu">
@@ -497,7 +508,11 @@
       </section>
     </main>
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu"></button>
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40" aria-label="Закрытие мобильного меню">
+          <use class="icon-cross" href="./images/icons.svg#button-close"></use>
+        </svg>
+      </button>
       <ul class="mobile-menu"></ul>
     </div>
     <!-- Adress, email and tel -->
@@ -506,9 +521,8 @@
       <div class="container footer-container--container">
         <div class="address-footer">
           <a href="./studio.html" class="address-footer__logo"
-            >Web<span class="address-footer__studio"> Studio </span>
+            >Web<span class="address-footer__studio">Studio</span>
           </a>
-          <br />
           <ul class="address-footer__menu">
             <li class="address-footer__item">
               <p class="address-footer__text">
