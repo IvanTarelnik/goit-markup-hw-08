@@ -443,7 +443,7 @@ textarea {
 .menu-toggle.js-close-menu {
   position: absolute;
   top: 10px;
-  left: 410px;
+  right: 15px;
 }
 
 .mobile-menu,
@@ -745,8 +745,8 @@ textarea {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0;
-  background-size: auto 100%;
+  padding: 100px 0;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: block;
@@ -764,6 +764,8 @@ textarea {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .title-section {
     max-height: 400px;
+    padding: 100px 0;
+    background-size: cover;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/title-tablet.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/title-tablet.jpg);
   }
@@ -779,6 +781,8 @@ textarea {
 @media screen and (min-width: 1200px) {
   .title-section {
     max-height: 600px;
+    padding: 200px 0;
+    background-size: cover;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/title-desktop.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/title-desktop.jpg);
   }
