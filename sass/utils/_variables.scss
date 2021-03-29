@@ -8,6 +8,7 @@
   --background-color: rgb(47, 48, 58);
   --background-transparent: rgba(47, 48, 58, 0.8);
   --heading-color: rgb(33, 33, 33);
+  --heading-transparent: rgba(33, 33, 33, 0.2);
   --content-color: rgb(117, 117, 117);
   --content-transparent: rgba(117, 117, 117, 0.5);
   --section-color: rgb(245, 244, 250);
@@ -233,11 +234,6 @@
 
 .terms-container__label {
   color: var(--content-color);
-}
-
-.terms-container__input:checked + .terms-container__input {
-  border-color: var(--blue-text);
-  background-color: var(--blue-text);
 }
 
 .terms-container__link {

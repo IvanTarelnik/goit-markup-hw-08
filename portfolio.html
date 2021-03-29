@@ -26,16 +26,26 @@
           <a href="./studio.html" class="logo"
             >Web<span class="logo-studio">Studio</span>
           </a>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40" aria-label="Открытие мобильного меню">
+              <use
+                class="icon-menu"
+                href="./images/icons.svg#icon-burger-menu"
+              ></use>
+            </svg>
+          </button>
           <ul class="site-menu">
             <li class="site-menu__item">
-              <a href="studio.html" class="header-links">Студия</a>
+              <a href="studio.html" class="header-links header-links--current"
+                >Студия</a
+              >
             </li>
             <li class="site-menu__item">
-              <a
-                href="portfolio.html"
-                class="header-links header-links--current"
-                >Портфолио</a
-              >
+              <a href="portfolio.html" class="header-links">Портфолио</a>
             </li>
             <li class="site-menu__item">
               <a href="#" class="header-links">Контакты</a>
@@ -336,6 +346,56 @@
         <!--CONTAINER-->
       </section>
     </main>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40" aria-label="Закрытие мобильного меню">
+          <use class="icon-cross" href="./images/icons.svg#button-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <ul class="mobmenu-pages">
+          <li class="mobmenu-pages__item">
+            <a href="studio.html" class="mobmenu-pages__link">Студия</a>
+          </li>
+          <li class="mobmenu-pages__item">
+            <a
+              href="portfolio.html"
+              class="mobmenu-pages__link mobmenu-pages__link--current"
+              >Портфолио</a
+            >
+          </li>
+          <li class="mobmenu-pages__item">
+            <a href="#" class="mobmenu-pages__link">Контакты</a>
+          </li>
+        </ul>
+        <ul class="mobmenu-contacts">
+          <li class="mobmenu-contacts__tel">
+            <a href="tel:+380961111111" class="mobmenu-contacts__link">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobmenu-contacts__item">
+            <a href="mailto:info@devstudio.com" class="mobmenu-contacts__mail">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="mobmenu-networks">
+          <li class="mobmenu-networks_item">
+            <a href="#" class="mobmenu-networks_link">Instagram</a>
+          </li>
+          <li class="mobmenu-networks_item">
+            <a href="#" class="mobmenu-networks_link">Twitter</a>
+          </li>
+          <li class="mobmenu-networks_item">
+            <a href="#" class="mobmenu-networks_link">Facebook</a>
+          </li>
+          <li class="mobmenu-networks_item">
+            <a href="#" class="mobmenu-networks_link">Linkedin</a>
+          </li>
+        </ul>
+      </ul>
+    </div>
     <!-- Adress, email and tel -->
     <footer class="footer-container">
       <!--CONTAINER-->
@@ -412,5 +472,12 @@
       </div>
       <!--CONTAINER-->
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
