@@ -595,7 +595,7 @@ textarea {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  padding-bottom: 32px;
+  padding-bottom: 30px;
 }
 
 .header-links::after {
